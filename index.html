@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        display: flex;
+        max-width: 1100px;
+        margin: 0 auto;
+        background-color: #010a30;
+        border-radius: 10px;
+        overflow: hidden;
+        color: white;
+      }
+      .left {
+        padding: 2rem;
+        flex: 1;
+      }
+      .left h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .left h1 span {
+        color: #aa5cdb;
+      }
+      .left p {
+        font-size: 15px;
+        margin-bottom: 2rem;
+      }
+      .stats {
+        display: flex;
+        gap: 2rem;
+      }
+      .stat h2 {
+        font-size: 15px;
+        margin-bottom: 0.5rem;
+      }
+      .stat p {
+        font-size: 0.875rem;
+        color: #aa5cdb;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+     @media (max-width: 768px) {
+        .container {
+          flex-direction: column-reverse;
+          margin: 1rem;
+          text-align: center;
+        }
+
+        .left {
+          padding: 1.5rem;
+        }
+
+        .left h1 {
+          font-size: 1.75rem;
+        }
+
+        .left p {
+          font-size: 1rem;
+        }
+
+        .stats {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+
+        .right img {
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Get <span>insights</span> that help your business grow.</h1>
+
+        <p>
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <h2>10k+</h2>
+            <p>COMPANIES</p>
+          </div>
+          <div class="stat">
+            <h2>314</h2>
+            <p>TEMPLATES</p>
+          </div>
+          <div class="stat">
+            <h2>12M+</h2>
+            <p>QUERIES</p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img
+          src="/stats-preview-card-component-main/images/image-header-desktop.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
+</html>
